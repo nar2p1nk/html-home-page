@@ -104,7 +104,7 @@ margin: 0px 5px 0px 5px;
   background-color: #1a1a1a;
   transition: background-color .3s;
 }
-.btn a{
+.btn.btnMain a{
   text-decoration: none;
   color: white;
 }
@@ -224,7 +224,13 @@ padding-right: 20px;
   left:10%;
   border-bottom: 1px solid white;
 }
-
+.btn.secondaryHead{
+  margin: auto auto 20px auto;
+}
+.btn.secondaryButton a{
+  text-decoration: none;
+  color:white;
+}
 @media screen and (max-width:1072px){
   .pop{
     display: list-item;
