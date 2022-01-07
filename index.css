@@ -209,7 +209,7 @@ padding-right: 20px;
 .secondaryHead{
   font-weight: 300;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding-bottom: 5px;
   position: relative;
   width:max-content
@@ -224,13 +224,46 @@ padding-right: 20px;
   left:10%;
   border-bottom: 1px solid white;
 }
-.btn.secondaryHead{
-  margin: auto auto 20px auto;
+.btn.btn.secondaryButton{
+  margin: 20px auto;
 }
 .btn.secondaryButton a{
   text-decoration: none;
   color:white;
 }
+
+.cta{
+  text-align: center;
+  margin-top: 100px;
+}
+.CtaHead{
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  position: relative;
+  width:max-content
+}
+.CtaHead:before{
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 10px;
+  bottom: 0;
+  left:10%;
+  border-bottom: 1px solid white;
+}
+
+.PCta{
+  padding: 0 20%;
+}
+.btn.ctaButton{
+width: max-content;
+}
+.btn.ctaButton a{
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (max-width:1072px){
   .pop{
     display: list-item;
@@ -247,17 +280,20 @@ padding-right: 20px;
     flex-direction: column;
   }
   .firstContent{
+    height: 600px;
     margin: 20px;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
-    padding-bottom: 0px;
+    grid-template-rows: 50% 50%;
+    padding-bottom: 20px;
   }
   .textContent{padding: 0 20px;}
   .articleImage{
     width: auto;
     display: block;
-    margin:auto;
+    margin: auto;
+    padding-bottom:20px;
   }
+  .cta{margin-top: 0px;}
 }
 
 @media screen and (max-width: 500px) {
