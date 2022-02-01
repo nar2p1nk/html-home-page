@@ -7,7 +7,7 @@ html{
 
 body{
     margin: 0;
-    height:3000px;
+    height:100%;
 }
 
 .header{
@@ -184,6 +184,7 @@ li{margin: auto 10px auto 10px; padding-top: 40px;}
 }
 .Vplaceholder{
   width: max-content;
+  max-height: 400px;
 }
 
 .secondaryContent{
@@ -264,6 +265,45 @@ width: max-content;
   color: white;
 }
 
+.foot{
+  width: 100%;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  margin-top:120px;
+  background-color: #262626;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.footer-info{
+  padding-left: 20%;
+  padding-top: 20px;
+}
+.footer-info a{
+  text-decoration: underline;
+  color: dodgerblue;
+}
+.footer-links{
+  display: flex;
+}
+.footer-links{
+text-align: center;
+}
+@media screen and (max-width:1200px){
+  .secondaryContent{
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  .firstContent{
+    height: 600px;
+    margin: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    padding-bottom: 20px;
+  }
+}
 @media screen and (max-width:1072px){
   .pop{
     display: list-item;
@@ -273,7 +313,8 @@ width: max-content;
     padding-right: 10%;
   }
   .Vplaceholder{
-    width: 90%;
+    width: auto;
+    max-height: 400px;
   }
   .secondaryContent{
     margin-top: 0px;
@@ -294,6 +335,9 @@ width: max-content;
     padding-bottom:20px;
   }
   .cta{margin-top: 0px;}
+  .footer-links{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
